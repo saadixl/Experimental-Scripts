@@ -4,4 +4,4 @@
 ### `docker build -t api-caller api-caller/`
 
 ## Run all the containers with scalling
-### `docker-compose up --scale api-caller=5` (Considering we want to create 5 instances)
+### `docker-compose up --remove-orphans --scale api-caller=100` (Considering we want to create 100 instances)

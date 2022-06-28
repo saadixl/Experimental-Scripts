@@ -3,3 +3,9 @@ version: "3"
 services:
   api-caller:
     image: "api-caller"
+    restart: always
+    ulimits:
+      nproc: 50000
+      nofile:
+        soft: 50000
+        hard: 50000
